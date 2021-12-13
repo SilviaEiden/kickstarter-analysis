@@ -2,8 +2,8 @@
 
 An analysis report has been requested to help Louise, a hopeful playwright, plan and budget her project campaigns, specifically in theatre. The analysis is based on the Kickstarter data, which has been narrowed down to focus on the US market. 
 
-![Descriptive Statistics - US Theatre - Plays](Descriptive Statistics - US Theatre - Plays.png)
-![Descriptive Statistics - US Theatre - Musical](Descriptive Statistics - US Theatre - Musical.png)
+![Descriptive_Statistics_US_Theatre_Plays](Descriptive_Statistics_US_Theatre_Plays.png)
+![Descriptive_Statistics_US_Theatre_Musical](Descriptive_Statistics_US_Theatre_Musical.png)
 
 Based on these descriptive statistics in the US market, the following can be determined:
 
@@ -12,12 +12,12 @@ Based on these descriptive statistics in the US market, the following can be det
 
 * As shown in the graph below, the green line displays the number of successful plays per month. You can see more plays were successful in reaching their goal during the Spring and Summer months. The month of May had the highest successful plays with a total of 53.
 
-![Outcomes_Based_on_Launch_Date_US_Theatre-Plays ](Outcomes_Based_on_Launch_Date_US_Theatre-Plays .png)
+![Outcomes_Based_on_Launch_Date_US_Theatre-Plays](Outcomes_Based_on_Launch_Date_US_Theatre-Plays.png)
 ![US_Theatre-Plays_Subcategory_Statistics](US_Theatre-Plays_Subcategory_Statistics.png)
 
 * Looking at the green line in the respective graph chart, you can see more musicals were successful in reaching their goal during the Spring and Summer months as well. May and June had the highest successful musicals with a total of 7 per month. 
 
-![Outcomes_Based_on_Launch_Date_US_Theatre-Musical ](Outcomes_Based_on_Launch_Date_US_Theatre-Musical .png)
+![Outcomes_Based_on_Launch_Date_US_Theatre-Musical](Outcomes_Based_on_Launch_Date_US_Theatre-Musical.png)
 ![US_Theatre-Musical_Subcategory_Statistics](US_Theatre-Musical_Subcategory_Statistics.png)
 
 * Quick facts: The top failed Kickstarter in Theatre/Plays and Theatre/Musical with a high goal and low pledge are as follows:
