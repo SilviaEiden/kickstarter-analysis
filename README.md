@@ -1,4 +1,8 @@
-# An Analysis of Kickstarter Campaigns.
+# An Analysis of Kickstarter Campaigns
+
+## Overview of Project
+
+### Purpose
 
 An analysis report has been requested to help Louise, a hopeful playwright, plan and budget her project campaigns, specifically in theatre. The analysis is based on the Kickstarter data, which has been narrowed down to focus on the US market. 
 
