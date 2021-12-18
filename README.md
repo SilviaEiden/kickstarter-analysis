@@ -3,12 +3,32 @@
 ## Overview of Project
 
 ### Purpose
-An analysis report has been requested to help Louise, a hopeful playwright, plan and budget her Kickstarter campaigns. She is highly interested in developing project campaigns in the theatre category.   
+The purpose of this analysis report is to help Louise, a hopeful playwright, plan and budget her Kickstarter campaigns. She is highly interested in developing project campaigns in the theatre category and wants to know how different campaigns managed in relation to their launch dates and their funding goals.
 
 ## Analysis and Challenges
 Let's start by mentioning that the analysis is based on the Kickstarter dataset, which is available here: [Kickstarter_Challenge](Kickstarter_Challenge.xlsx.zip).
 
-It is noted that Louise’s play "Fever" came close to its fundraising goal in a short amount of time. The challenge is she wants to know how different campaigns fared in relation to their launch dates and their funding goals, which is covered in the following section.
+Additionally, the following was done in excel for this analysis:
+
+* By using the Kickstarter dataset, I was able to synthesize raw data of more than 4,000 past projects to find out campaign outcomes based on their launch dates and their funding goals.  
+
+* To do so, I added a new column to calculate the "Years" and used the YEAR() function to extract the year from the “Date Created Conversion” column in the Kickstarter sheet. As shown here: 
+=YEAR(S2)
+
+* From there I was able to create a pivot table to filter it based on "Parent Category" and "Years."
+
+* In pivot table fields, I added "Outcomes" for both columns and values and "Date Created Conversion" for rows. To display the months of the year I had to group the “row labels” to make the pivot table easier to read. 
+
+* A line chart was created to visualize the outcomes in relation to the launch month. On the x-axis the months are placed, and the number of successful, failed and canceled projects are placed on the y-axis.
+
+* As to find out the outcomes based on funding goal amounts, a new sheet was created named “Outcomes based on Goals”.
+
+* The Outcomes based on Goals sheet includes a table with goal-amount ranges, the number of successful, failed and canceled projects as well as the total amount of projects and the percentage of successful, failed and canceled projects.
+
+* To calculate this data it was imperative to use the COUNTIFS() function which allows to count each project with its respective outcome and factor it in the table. This function certainly deserves more attention as you want to consider correctly the outcome column, the goal-amount ranges, the goal column and the subcategory “Plays” column. As shown here:
+=COUNTIFS(Kickstarter!$F:$F,"successful", Kickstarter!$D:$D,"<1000",Kickstarter!$R:$R,"plays") 
+
+* Lastly, a line chart was created to display the relationship between the goal-amount ranges on the x-axis and the percentage of successful, failed and canceled projects on the y-axis.
 
 ### Analysis of Outcomes Based on Launch Date
 From 2009 to 2017, there were a total of 839 successful Theatre campaigns or a 61% success rate from the grand total amount of campaigns created, which were 1,369. On average, there were 93 successful campaigns per year across the 9 years, which covered 21 countries. 
@@ -22,7 +42,7 @@ To further analyze the data that pertains only to the subcategory "Plays", we ca
 
 A successful outcome means that a play received monetary pledges that either matched or exceeded its targeted financial goal. 
 
-As shown in the graph below, the blue line displays the percentage of successful Kickstarter campaigns relative to the dollar-amount range. Moreover, we can see that success rates varied largely due to their dollar-amount goals. Dollar-amount ranges of Less Than $1,000 and $1,000 to $4,999 had not only the highest volume of plays, but also generated the highest success rates. Dollar-amount ranges of Less than $1,000 had 186 total projects with a 76% success rate, or 141 successful plays. Dollar-amount ranges between $1,000 and $4,999 had 534 total projects with a 73% success rate, or 388 successful plays.    
+As shown in the graph below, the blue line displays the percentage of successful Kickstarter campaigns relative to the dollar-amount range. Moreover, we can see that success rates varied largely due to their dollar-amount goals. Dollar-amount ranges of Less Than $1,000 and $1,000 to $4,999 had not only the highest volume of plays, but also generated the highest success rates. Dollar-amount ranges of Less than $1,000 had 186 total projects with a 76% success rate, or 141 successful plays. Dollar-amount ranges between $1,000 and $4,999 had 534 total projects with a 73% success rate, or 388 successful plays.
 
 ![Outcomes_vs_Goals](Resources/Outcomes_vs_Goals.png)
 
